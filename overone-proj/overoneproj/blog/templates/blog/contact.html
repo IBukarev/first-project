@@ -1,0 +1,30 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block css_edit %}
+<link rel="stylesheet" href="{% static 'blog/css/contact.css' %}">
+{% endblock %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+    <div class="contact">
+            <div class="contact_hi">
+                <h2>Хочешь пообщаться? Давай свяжемся:</h2>
+            </div>
+            <div class="new_contact">
+                <button class="new_btn"><a href="https://t.me/the_buk" target="_blank">Telegram</a></button>
+                <button class="new_btn"><a href="https://www.instagram.com/_the_buk/" target="_blank">Instagram</a></button>
+                <button class="new_btn"><a href="https://vk.com/ammoo" target="_blank">VK</a></button>
+                <button class="new_btn"><a href="https://github.com/IBukarev" target="_blank">GitHub</a></button>
+
+            </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <footer class="footer">
+        ©️ Все права защищены 2022
+    </footer>
+{% endblock %}

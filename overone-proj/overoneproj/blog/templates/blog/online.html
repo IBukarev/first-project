@@ -1,0 +1,50 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block css_edit %}
+<link rel="stylesheet" href="{% static 'blog/css/online.css' %}">
+{% endblock %}
+
+{% block title %}Онлайн чат{% endblock %}
+
+{% block content %}
+<br>
+<div class="chat_hi">
+    <h1>Привет! Добро пожаловать в онлайн чат!</h1>
+    <p>Для общения в чате, нужно всего лишь написать как тебя зовут,
+        а затем твое сообщение! Общение в чате происходит без смс и регистрации,
+        это очень удобно, поверь мне! :)
+    </p>
+</div>
+<br>
+<br>
+<br>
+<div class="online_chat">
+    <form method="post">
+        {% csrf_token %}
+        <br>
+        {{ form.name }}
+        <br>
+        <br>
+        {{ form.sms }}
+        <br>
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+<br>
+<br>
+<br>
+
+{% for i in sms %}
+
+<div class="online">
+    <div class="online_name">{{ i.name }}:</div>
+    <br>
+    <div class="online_sms">{{ i.sms }}</div>
+    <br>
+</div>
+
+
+{% endfor %}
+{% endblock %}

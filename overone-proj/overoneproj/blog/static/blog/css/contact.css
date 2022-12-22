@@ -1,0 +1,163 @@
+/* HEADER*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #383c54;
+}
+
+.header_intro {
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: #383c54;
+    margin-left: 25px;
+    font-size: 23px;
+    height: 50px;
+    width: 150px;
+}
+
+
+
+/* MENU */
+.menu {
+    display: flex;
+
+}
+
+.menu li {
+    width: 200px;
+    list-style: none;
+    background-color: #383c54;
+    position: relative;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    transition: all .5s;
+}
+
+.menu a:hover {
+    background: #808291;
+}
+
+.menu ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0;
+}
+
+.menu li:hover ul {
+    display: block;
+
+}
+
+/* CONTACT */
+
+.contact {
+    width: 100%;
+    height: 200px;
+    background-color: #383c54;
+    height:89vh;
+    padding: 250px
+}
+
+.contact_hi {
+    color: #fff;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+
+/* CONTACT BUTTON */
+
+.new_contact{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.new_btn{
+    border-radius: 15px;
+    font-size: 25px;
+    background-color: rgb(150, 52, 52);
+    width: 200px;
+    height: 75px;
+    transition: 0.3s;
+    margin: auto;
+}
+
+.new_btn a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.new_btn:nth-child(1){
+    background-color: #0088cc;
+    color: #fff;
+}
+
+.new_btn:nth-child(1):hover{
+    background-color: #0088cc;
+    color: #fff;
+    width: 250px;
+    height: 100px;
+    font-size: 30px;
+}
+
+.new_btn:nth-child(2){
+    background-color: #e1306c;
+    color: #fff;
+}
+
+.new_btn:nth-child(2):hover{
+    background-color: #e1306c;
+    color: #fff;
+    width: 250px;
+    height: 100px;
+    font-size: 30px;
+}
+
+.new_btn:nth-child(3){
+    background-color: #597da3;
+    color: #fff;
+}
+
+.new_btn:nth-child(3):hover{
+    background-color: #597da3;
+    color: #fff;
+    width: 250px;
+    height: 100px;
+    font-size: 30px;
+}
+
+.new_btn:nth-child(4){
+    background-color: #333;
+    color: #fff;
+}
+
+
+.new_btn:nth-child(4):hover{
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    height: 100px;
+    font-size: 30px;
+}
+
+/* FOOTER*/
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: auto;
+}
